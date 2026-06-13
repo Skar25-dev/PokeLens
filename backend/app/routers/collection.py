@@ -42,7 +42,7 @@ async def _build_user_card_out(db: Session, uc: UserCard) -> UserCardOut:
     prices = None
     if card.pokemontcg_id:
         live = await pokemontcg.get_card_by_id(card.pokemontcg_id)
-        if live:
+        if isinstance(live, dict):
             prices = live.get("prices")
     
     estimated_value = price_aggregator.estimate_value(prices, uc.condition, uc.quantity)

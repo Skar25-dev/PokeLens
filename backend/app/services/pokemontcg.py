@@ -83,8 +83,11 @@ async def get_card_by_id(pokemontcg_id: str) -> dict | None:
         headers["X-Api-Key"] = settings.POKEMONTCG_API_KEY
     
     async with httpx.AsyncClient() as client:
-        resp = await client.get(f"{BASE_URL}/{pokemontcg_id}", headers=headers, timeout=10.0)
-
+        try:
+            resp = await client.get(f"{BASE_URL}/{pokemontcg_id}", headers=headers, timeout=10.0)
+        except httpx.TimeoutException:
+            return None
+        
         if resp.status_code != 200:
             return None
 
@@ -92,4 +95,4 @@ async def get_card_by_id(pokemontcg_id: str) -> dict | None:
         if not card:
             return None
         
-        return _card_to_dict
+        return _card_to_dict(card)

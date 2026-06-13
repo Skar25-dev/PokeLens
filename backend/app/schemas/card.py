@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 
 class CardResult(BaseModel):
     """Resultado devuelto por /scan (identificación + precio, sin guardar)."""
@@ -20,5 +20,4 @@ class CardOut(BaseModel):
     rarity: str | None = None
     image_url: str | None = None
 
-    class Config:
-        from_attribute = True
+    model_config = ConfigDict(from_attributes=True)

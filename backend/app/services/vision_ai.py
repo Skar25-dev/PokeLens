@@ -6,7 +6,7 @@ from fastapi import HTTPException
 from app.config import settings
 
 genai.configure(api_key=settings.GEMINI_API_KEY)
-_model = genai.GenerativeModel("gemini-2.0-flash")
+_model = genai.GenerativeModel("gemini-2.5-flash")
 
 IDENTIFY_PROMPT = """Eres un experto en cartas de Pokémon TCG.
                     Analiza esta imagen y devuelve EXCLUSIVAMENTE un JSON (sin texto adicional, sin markdown), con esta estructura:
