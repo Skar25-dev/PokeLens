@@ -1,0 +1,24 @@
+{
+    "expo": {
+        "name": "PokéLens",
+        "slug": "pokelens",
+        "scheme": "pokelens",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "userInterfaceStyle": "automatic",
+        "plugins": [
+            [
+                "expo-camera",
+                {
+                    "cameraPermission": "PokéLens necesita acceso a la cámara para escanear tus cartas."
+                }
+            ]
+        ],
+        "ios": {
+            "supportsTablet": true
+        },
+        "android": {
+            "package": "com.pokelens.app"
+        }
+    }
+}
