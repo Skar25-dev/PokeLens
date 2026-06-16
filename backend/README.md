@@ -110,14 +110,14 @@ Edita `.env` con tus credenciales (ver sección Variables de Entorno).
 ---
 
 ## 🔧 Variables de Entorno
-`GEMINI_API_KEY=tu_api_key`
-`Gratis en https://aistudio.google.com/app/apikey`
-`POKEMONTCG_API_KEY=tu_api_key`
-`Opcional, sube el rate limit. Gratis en https://dev.pokemontcg.io`
-`DATABASE_URL=sqlite:///./pokelens.db`
-`Para producción: postgresql://user:pass@localhost:5432/pokelens`
-`SECRET_KEY=cadena_aleatoria_larga`
-`Genera con: python -c "import secrets; print(secrets.token_hex(32))"`
+- `GEMINI_API_KEY=tu_api_key`
+- `Gratis en https://aistudio.google.com/app/apikey`
+- `POKEMONTCG_API_KEY=tu_api_key`
+- `Opcional, sube el rate limit. Gratis en https://dev.pokemontcg.io`
+- `DATABASE_URL=sqlite:///./pokelens.db`
+- `Para producción: postgresql://user:pass@localhost:5432/pokelens`
+- `SECRET_KEY=cadena_aleatoria_larga`
+- `Genera con: python -c "import secrets; print(secrets.token_hex(32))"`
 
 ---
 
