@@ -136,19 +136,13 @@ Escanea el QR con Expo Go (móvil en la misma WiFi que el PC).
 
 ## 🧪 Variables de Entorno
 
-`backend/.env`
-
-`GEMINI_API_KEY=tu_api_key`           # https://aistudio.google.com/app/apikey
-
-`POKEMONTCG_API_KEY=tu_api_key`       # https://dev.pokemontcg.io (opcional)
-
-`DATABASE_URL=sqlite:///./pokelens.db`
-
-`SECRET_KEY=genera_con_secrets.token_hex(32)`
-
-`mobile/.env`
-
-`EXPO_PUBLIC_API_URL=http://TU_IP_LOCAL:8000`
+- `backend/.env`
+- `GEMINI_API_KEY=tu_api_key`           # https://aistudio.google.com/app/apikey
+- `POKEMONTCG_API_KEY=tu_api_key`       # https://dev.pokemontcg.io (opcional)
+- `DATABASE_URL=sqlite:///./pokelens.db`
+- `SECRET_KEY=genera_con_secrets.token_hex(32)`
+- `mobile/.env`
+- `EXPO_PUBLIC_API_URL=http://TU_IP_LOCAL:8000`
 
 ---
 
