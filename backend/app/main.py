@@ -2,12 +2,13 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.database import Base, engine
-from app.routers import scan, prices, collection
+from app.routers import scan, prices, collection, auth
 
 # Crea las tablas si no existen (para MVP; en producción usar Alembic)
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="PokéLens API")
+app.include_router(auth.router)
 
 app.add_middleware(
     CORSMiddleware,
