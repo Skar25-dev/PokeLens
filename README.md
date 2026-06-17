@@ -32,6 +32,22 @@ PokéLens actúa como un valorador de cartas Pokémon en tu bolsillo. Apunta la 
 
 ---
 
+## 📸 Galería
+
+### 📷 Escaneo con Cámara
+Apunta a cualquier carta y Gemini Vision identifica nombre, set, número y rareza en segundos.
+![Escaneo](docs/screenshots/scan.png)
+
+### 💰 Resultado e Identificación
+Imagen oficial de la carta con precios en tiempo real de Cardmarket (EUR) y TCGPlayer (USD), y selector de condición para añadirla a tu colección.
+![Resultado](docs/screenshots/scan_result.png)
+
+### 📦 Colección Personal
+Valor total de tu colección y desglose por rareza: Common, Rare, Ultra Rare y más.
+![Colección](docs/screenshots/collection.png)
+
+---
+
 ## 🏗️ Arquitectura del Sistema
 
 ```text
