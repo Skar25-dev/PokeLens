@@ -46,6 +46,10 @@ Imagen oficial de la carta con precios en tiempo real de Cardmarket (EUR) y TCGP
 Valor total de tu colección y desglose por rareza: Common, Rare, Ultra Rare y más.
 ![Colección](docs/screenshots/collection.png)
 
+### 🎴 Detalles de la carta
+Distintos detalles de la carta.
+![Colección](docs/screenshots/collection.png)
+
 ---
 
 ## 🏗️ Arquitectura del Sistema
